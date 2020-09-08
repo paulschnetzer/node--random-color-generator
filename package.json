@@ -1,0 +1,13 @@
+{
+  "name": "node--random-color-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paulschnetzer/node--random-color-generator.git",
+  "author": "Paul Schnetzer <1998sheldon@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "colornames": "^1.1.1",
+    "randomcolor": "^0.6.2"
+  }
+}
