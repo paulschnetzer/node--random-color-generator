@@ -1,14 +1,11 @@
-const command = process.argv;
 const chalk = require('chalk');
 const randomColor = require('randomcolor');
-// importiet alle notwendigen libaries und den userInput bzw. command
 
-const y = randomColor({
+const command = process.argv;
+const UserInput = randomColor({
   hue: command[2],
   luminosity: command[3],
 });
-
-//
 
 const randomColors = randomColor();
 if (command[2] === undefined) {
@@ -21,9 +18,9 @@ if (command[2] === undefined) {
   );
 } else {
   console.log(
-    chalk.hex(y)(
+    chalk.hex(UserInput)(
       '############################ \n############################\n######     ' +
-        y +
+        UserInput +
         '    ######\n############################ \n############################',
     ),
   );
