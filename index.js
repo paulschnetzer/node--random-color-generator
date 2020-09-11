@@ -7,12 +7,12 @@ const UserInput = randomColor({
   luminosity: command[3],
 });
 
-const randomColors = randomColor();
+const UserInputColor = randomColor();
 if (command[2] === undefined) {
   console.log(
-    chalk.hex(randomColors)(
+    chalk.hex(UserInputColor)(
       '############################ \n############################\n######     ' +
-        randomColors +
+        UserInputColor +
         '    ######\n############################ \n############################',
     ),
   );
